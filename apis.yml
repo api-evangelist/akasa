@@ -1,7 +1,30 @@
 aid: akasa
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/akasa.png
 name: AKASA
-description: AKASA is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  AKASA is a generative AI company for healthcare revenue cycle management
+  (RCM), building AI-powered products that automate coding, clinical
+  documentation integrity (CDI), prior authorization status, and claim status
+  work for hospitals and health systems. Its platform includes the Prebill
+  Optimization Suite (Coding Optimizer and CDI Optimizer), AI Advisor, Auth
+  Status, and Claim Status, trained on millions of clinical and financial
+  documents. AKASA reports serving 650+ hospitals and 6,500+ outpatient
+  facilities across all 50 states, with customers citing reductions in A/R days
+  and hundreds of monthly staff hours saved. The company was surfaced as an
+  a16z portfolio company and added to the API Evangelist network for
+  enrichment; it publishes no public developer API or documentation at this
+  time.
 url: https://raw.githubusercontent.com/api-evangelist/akasa/refs/heads/main/apis.yml
 x-type: company
 x-source: a16z-portfolio
@@ -12,9 +35,32 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Healthcare
+- Artificial Intelligence
+- Generative AI
+- Revenue Cycle Management
+- Medical Coding
+- Health Systems
+- Automation
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/akasa-domain-security.yml
+- type: Website
+  url: https://akasa.com
+- type: Blog
+  url: https://akasa.com/blog/
+- type: PrivacyPolicy
+  url: https://akasa.com/privacy-policy
+- type: Support
+  url: https://akasa.com/contact-us
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
